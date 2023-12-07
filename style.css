@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playpen Sans", cursive;
+  background-color: brown;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin: 40px 0;
+  color: antiquewhite;
+}
+
+.game {
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-player {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  color: brown;
+  font-weight: 600;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: brown;
+}
+
+.cell:hover {
+  background-color: azure;
+}
+
+.result {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+.history {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: brown;
+}
+
+#roundHistory {
+  margin: 10px 0;
+}
+
+.stats {
+  margin-top: 40px;
+  color: antiquewhite;
+}
+
+.stats table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.stats table caption {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.stats table tr:nth-child(even) {
+  background-color: bisque;
+  color: brown;
+}
+
+.stats table td {
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 400px;
+  }
+  .cell {
+    font-size: 30px;
+  }
+}

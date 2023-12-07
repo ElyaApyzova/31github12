@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Tic Tac Toe</h1>
+      <div class="game">
+        <div class="current-player">
+          <span>The First Step: <span id="currentPl">X</span></span>
+        </div>
+        <div class="board" id="board">
+          <div class="cell" id="cell-1"></div>
+          <div class="cell" id="cell-2"></div>
+          <div class="cell" id="cell-3"></div>
+          <div class="cell" id="cell-4"></div>
+          <div class="cell" id="cell-5"></div>
+          <div class="cell" id="cell-6"></div>
+          <div class="cell" id="cell-7"></div>
+          <div class="cell" id="cell-8"></div>
+          <div class="cell" id="cell-9"></div>
+        </div>
+        <div class="result" id="result">
+          <span>Result: </span>
+          <span id="whoWins"></span>
+        </div>
+        <div class="history" id="history">
+          <span>Game History:</span>
+          <div id="roundHistory"></div>
+        </div>
+      </div>
+      <div class="stats">
+        <table>
+          <caption>
+            Statistics
+          </caption>
+          <tr>
+            <td>Wins X:</td>
+            <td id="sX">0</td>
+          </tr>
+          <tr>
+            <td>Wins O:</td>
+            <td id="sO">0</td>
+          </tr>
+          <tr>
+            <td>Draws:</td>
+            <td id="sD">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
